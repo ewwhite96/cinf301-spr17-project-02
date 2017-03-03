@@ -3,7 +3,7 @@ namespace App\Models;
 require_once('TwitterAPIExchange.php');
 
 
-private  $settings = array(
+$settings = array(
 		'oauth_access_token' => "267728185-JZ5EAdUFpc751brk9MVCAWU4NaqiwPAUP5017TX3",
 		'oauth_access_token_secret' => "aLnEMjHHxqTK3a70BHD4M60M7FRGrSXhyH7eVZahxuqhW",
 		'consumer_key' => "psUy1RmK7tCAxFqsqBjJa8AbV",
@@ -32,14 +32,14 @@ class Twitter
 
 		$blocks = json_decode($twitter);		
 
-		foreach($blocks as $postfield)
+		foreach($blocks as $block)
 		{
-			if($postfield['scree_name'] == $screen_name)
+			if($block['scree_name'] == $screen_name)
 			{
-				return $postfield;
+				return $block;
 			}
 		}
-		return $blocks;
+		return $blocks[0];
 	}
 
 	public static function followers()
@@ -52,6 +52,13 @@ class Twitter
 		echo $twitter->setGetfield($getfield)
 			->buildOauth($url, $requestMethod)
 			->performRequest();
+		$followers = json_decode($twitter);
+		foreach($followers as $follower)
+		{
+			$follower->screen_name;
+
+		}
+		return $followers;
 	}
 
 	public static function friends()
@@ -65,6 +72,14 @@ class Twitter
 		echo $twitter->setGetfield($getfield)
 			->buildOauth($url, $requestMethod)
 			->performRequest();
+
+		$friends = json_decode($twitter);
+		foreach($friends as $friend)
+		{
+			$friend->user_id;
+		}
+
+		return $friends;
 	}
 
 }

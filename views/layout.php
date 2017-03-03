@@ -5,13 +5,13 @@
  <body>
 	<table>
 		<tr>
-			<th><a> </a></th>
+			<th><a href=' /twitter'>Home</a></th>
 		<tr>
 		<tr>
-			<th><a> </a></th>
+			<th><a href='?controller=blocks&action=index'>Twitter Info</a></th>
 		<tr>
 	</table>
-
+	<?php require_once('routes.php'); ?>
  <body>
 <html>
 
