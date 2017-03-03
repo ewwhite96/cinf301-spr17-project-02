@@ -13,12 +13,6 @@ class MainController
 		$view->title = $title;
 		$view->render('home.php');
 	}
-	
-	public function error()
-	{
-		$view = new Renderer('views/main/');
-		$view->render('error.php');
-	}
 
 
 }

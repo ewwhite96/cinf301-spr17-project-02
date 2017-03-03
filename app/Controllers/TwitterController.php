@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 use App\Renderer as Renderer;
-use App\Models\Twitter as Twitter;
+use App\Models\TwitterAPIExchange as Twitter;	
 
 class TwitterController
 {
