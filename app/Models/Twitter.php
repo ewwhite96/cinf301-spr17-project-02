@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-use TwitterAPIExchange.php
+use TwitterAPIExchange;
 
 
 $settings = array(
