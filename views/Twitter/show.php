@@ -1,5 +1,6 @@
 <h2>Blocks<h2>
-
+<!--Displays the user names of blocked people-->
+<!--@author ewwhite-->
 <table>
  <tr>
    <th>Name of Blocks</th>

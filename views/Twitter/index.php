@@ -1,4 +1,6 @@
 <h2>Followers and Friends</h2>
+<!--Page that displays thae Followers and Friends-->
+<!--@author ewwhite-->
 <table>
  <tr>
   <th>ID</th>

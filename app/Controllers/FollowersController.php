@@ -3,9 +3,15 @@ namespace App\Controllers;
 use App\Renderer as Renderer;
 use App\Models\Twitter as Twitter;
 
-
-
-class FollowerController
+/*
+ *FollowersController class that accesses data from the 
+ *Twitter model class and passes it to a rendering class 
+ *to be rendered as view
+ *
+ *@author ewwhite
+ *
+ */
+class FollowersController
 {
 	public function index()
 	{

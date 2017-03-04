@@ -1,6 +1,14 @@
 <?php
 use App\Controllers;
 
+/* 
+ *Routes directs the code to the corresponding controller/method
+ *
+ *@author ewwhite
+ *
+ */
+
+
 function route($controller, $action)
 {
 	switch($controller)

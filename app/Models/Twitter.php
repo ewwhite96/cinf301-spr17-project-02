@@ -1,7 +1,10 @@
 <?php
 namespace App\Models;
 use TwitterAPIExchange;
-
+/*
+ *The variable array settings sets the access tokens
+ *
+ */
 
 $settings = array(
 		'oauth_access_token' => "267728185-JZ5EAdUFpc751brk9MVCAWU4NaqiwPAUP5017TX3",
@@ -9,11 +12,21 @@ $settings = array(
 		'consumer_key' => "psUy1RmK7tCAxFqsqBjJa8AbV",
 		'consumer_secret' => "Q0OKTOTP4h4JFRLkMaOeCkUyrK5wJblT0VEhFCZM1c66xy5fjU"
 		);
-
-
+/*
+ *Twitter model class that uses the TwitterAPIExchange
+ *to access varoius types of twitter information
+ *
+ *@author ewwhite
+ *
+ */
 class Twitter 
 {
-
+	/*
+	 *Access only a signle blocked user 
+ 	 *
+	 *@param string $screen_name
+         *@return $blocks
+         */
 	public static function blocks($screen_name)
 	{
 
@@ -42,6 +55,11 @@ class Twitter
 		return $blocks[0];
 	}
 
+	/*
+	 *Return all followers of J7mbo
+	 *
+	 *@return $followers
+	 */
 	public static function followers()
 	{
 		$url = 'https://api.twitter.com/1.1/followers/ids.json';
@@ -60,7 +78,12 @@ class Twitter
 		}
 		return $followers;
 	}
-
+	
+	/*
+	 *Return all friends of J7mbo
+	 *
+	 *@return $friends
+	 */
 	public static function friends()
 	{
 		$url = 'https://api.twitter.com/1.1/friends/ids.json';

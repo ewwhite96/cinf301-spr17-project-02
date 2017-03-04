@@ -1,4 +1,6 @@
 <DOCTYPE html>
+<!--This is the layout for the website that pulls in the twitter information-->
+<!--@author ewwhite-->
 <html>
   <head>
   <head>

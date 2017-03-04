@@ -47,7 +47,13 @@ class Renderer
     {
         $this->myData[$name] = $value;
     }
-
+	
+    /*
+     *Magic getter to get value to render in the view
+     *
+     *@param string $name
+     *@return mixed
+     */
     public function __get($name)
     {
 	return $this->myData[$name];
