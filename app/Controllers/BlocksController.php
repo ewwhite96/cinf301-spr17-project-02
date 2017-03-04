@@ -3,7 +3,7 @@ namespace App\Controllers;
 use App\Renderer as Renderer;
 use App\Models\Twitter as Twitter;	
 
-class TwitterController
+class BlocksController
 {
 	public function show()
 	{
