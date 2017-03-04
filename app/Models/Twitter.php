@@ -1,6 +1,6 @@
 <?php
 namespace App\Models;
-require_once('TwitterAPIExchange.php');
+use TwitterAPIExchange.php
 
 
 $settings = array(
