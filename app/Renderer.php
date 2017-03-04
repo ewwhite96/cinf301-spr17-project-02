@@ -48,3 +48,8 @@ class Renderer
         $this->myData[$name] = $value;
     }
 
+    public function __get($name)
+    {
+	return $this->myData[$name];
+    }
+}

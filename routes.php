@@ -3,7 +3,7 @@ use App\Controllers;
 
 function route($controller, $action)
 {
-	switch)$controller)
+	switch($controller)
 	{
 		case 'main':
 			$controller = new App\Controllers\MainController();
@@ -26,7 +26,7 @@ $controllers = array('main' => ['home'],
 
 if(array_key_exists($controller, $controllers))
 {
-	if(in_array($action, $controllers[$controller}))
+	if(in_array($action, $controllers[$controller]))
 	{
 		route($controller, $action);
 	}
